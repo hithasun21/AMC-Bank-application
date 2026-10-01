@@ -1,0 +1,43 @@
+# Java / Maven
+
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot
+
+*.log
+
+# Node / React / Vite
+
+node_modules/
+dist/
+build/
+.vite/
+
+# Environment / Secrets
+
+.env
+.env.*
+!.env.example
+
+# IDEs
+
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Temporary files
+
+*.tmp
+*.temp
