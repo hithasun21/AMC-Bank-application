@@ -1,4 +1,4 @@
-# 🏦 AMC Bank
+# AMC Bank
 
 ### Full-Stack Banking Management System
 
@@ -8,7 +8,7 @@ The application demonstrates the development of a secure banking system using **
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 AMC Bank follows a layered backend architecture and a client-server model.
 
@@ -55,9 +55,9 @@ The React frontend communicates with the Spring Boot backend through REST APIs. 
 
 ---
 
-# ✨ Key Features
+# Key Features
 
-## 🔐 Authentication & Security
+## Authentication & Security
 
 - Admin and customer login
 - JWT-based authentication
@@ -70,7 +70,7 @@ The React frontend communicates with the Spring Boot backend through REST APIs. 
 
 ---
 
-## 👨‍💼 Admin Features
+## Admin Features
 
 Administrators can manage the core banking operations of the application.
 
@@ -98,7 +98,7 @@ Administrators can manage the core banking operations of the application.
 
 ---
 
-## 👤 Customer Self-Service
+## Customer Self-Service
 
 Customers have access to their own banking information and operations.
 
@@ -114,7 +114,7 @@ Customer operations are protected using authentication, authorization, and accou
 
 ---
 
-# 🛠️ Technology Stack
+# Technology Stack
 
 | Layer | Technology |
 |---|---|
@@ -134,7 +134,7 @@ Customer operations are protected using authentication, authorization, and accou
 
 ---
 
-# 🏗️ Backend Architecture
+# Backend Architecture
 
 The backend follows a layered architecture based on separation of responsibilities.
 
@@ -197,7 +197,7 @@ It stores persistent information required by the banking application, including 
 
 ---
 
-# 🔄 Application Workflow
+# Application Workflow
 
 The overall application workflow is:
 
@@ -229,7 +229,7 @@ React Frontend
 
 ---
 
-# 🔑 Authentication Workflow
+# Authentication Workflow
 
 AMC Bank uses JWT-based authentication.
 
@@ -259,7 +259,7 @@ Authorization: Bearer <JWT>
 
 ---
 
-# 💰 Banking Operations
+# Banking Operations
 
 ## Account Operations
 
@@ -279,7 +279,7 @@ The application supports:
 
 ---
 
-# 🏦 Loan Management
+# Loan Management
 
 The loan module provides loan listing, eligibility validation, sanctioning, and EMI calculation.
 
@@ -307,7 +307,7 @@ Loan Sanction / Rejection
 
 ---
 
-# 🌐 API Overview
+# API Overview
 
 ## Public Endpoints
 
@@ -344,7 +344,7 @@ These endpoints provide customer self-service functionality.
 
 ---
 
-# 🗄️ Database Configuration
+# Database Configuration
 
 The application uses PostgreSQL.
 
@@ -372,7 +372,7 @@ spring.datasource.password=YOUR_PASSWORD
 
 ---
 
-# 🚀 Getting Started
+# Getting Started
 
 ## Prerequisites
 
@@ -458,7 +458,7 @@ Open the displayed URL in your browser.
 
 ---
 
-# 🔑 Demo Credentials
+# Demo Credentials
 
 ### Admin
 
@@ -478,7 +478,7 @@ Customers can change their password after logging in.
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 The project is organized into separate frontend and backend applications.
 
@@ -516,7 +516,7 @@ Database
 
 ---
 
-# 🔒 Security Considerations
+# Security Considerations
 
 The project includes classroom-oriented authentication and security configuration.
 
@@ -536,7 +536,7 @@ The demo credentials and development configuration included with the training pr
 
 ---
 
-# 🎓 Learning Outcomes
+# Learning Outcomes
 
 This project provided practical experience with:
 
@@ -562,7 +562,7 @@ This project provided practical experience with:
 
 ---
 
-# 📈 Future Enhancements
+# Future Enhancements
 
 Potential improvements for a production-oriented version include:
 
@@ -580,7 +580,7 @@ Potential improvements for a production-oriented version include:
 
 ---
 
-# 👨‍💻 Project Summary
+# Project Summary
 
 AMC Bank demonstrates the integration of modern Java backend technologies with a React frontend to create a structured full-stack banking application.
 
@@ -605,22 +605,6 @@ React
 The final application demonstrates how authentication, authorization, business logic, persistence, and frontend interaction work together in a complete full-stack application.
 
 ---
-
-## 📄 Project Type
-
-**Academic / Training Project**
-
-**Domain:** Banking / FinTech
-
-**Development Model:** Full-Stack Web Application
-
-**Backend:** Java + Spring Boot
-
-**Frontend:** React + Vite
-
-**Database:** PostgreSQL
-
-**Authentication:** JWT + Spring Security
 
 ---
 
