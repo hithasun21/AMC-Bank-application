@@ -605,9 +605,3 @@ React
 The final application demonstrates how authentication, authorization, business logic, persistence, and frontend interaction work together in a complete full-stack application.
 
 ---
-
----
-
-## ⭐ Acknowledgement
-
-Developed as the final integrated project during a **10-day Java Full Stack Development training program**.
