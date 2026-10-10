@@ -479,44 +479,48 @@ Customers can change their password after logging in.
 > Demo credentials are intended for classroom/testing purposes only.
 
 ---
+## Project Structure
 
-# Project Structure
+The project is organized into separate backend and frontend applications.
 
-The project is organized into separate frontend and backend applications.
+AMC-Bank-application/
+|
+|-- backend/
+|   |-- src/
+|   |   |-- main/
+|   |   |   |-- java/
+|   |   |   |   |-- ... (Java source packages)
+|   |   |   |
+|   |   |   |-- resources/
+|   |   |       |-- application.properties
+|   |   |
+|   |   |-- test/
+|   |
+|   |-- pom.xml
+|
+|-- frontend/
+|   |-- src/
+|   |   |-- ... (React components and application code)
+|   |
+|   |-- package.json
+|   |-- vite.config.*
+|
+|-- README.md
 
-AMC-Bank/
-│
-├── backend/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── ...
-│   │   │   └── resources/
-│   │   │       └── application.properties
-│   │   └── test/
-│   │
-│   └── pom.xml
-│
-├── frontend/
-│   ├── src/
-│   │   └── ...
-│   ├── package.json
-│   └── vite.config.*
-│
-└── README.md
+### Backend Layers
 
+- **Controller:** Handles incoming HTTP requests and returns responses.
+- **Service:** Implements business logic and banking validation rules.
+- **Repository:** Performs database operations using Spring Data JPA.
+- **Database:** PostgreSQL stores persistent application data.
 
-The backend follows the logical structure:
+### Frontend
 
-Controller
-    ↓
-Service
-    ↓
-Repository
-    ↓
-Database
+- **React:** Builds the user interface for administrators and customers.
+- **Vite:** Provides frontend development and build tooling.
 
----
+*Note: The directory names shown above are representative. Keep them aligned with the actual folders in your repository.*
+
 
 # Security Considerations
 
