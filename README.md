@@ -481,46 +481,34 @@ Customers can change their password after logging in.
 ---
 ## Project Structure
 
-The project is organized into separate backend and frontend applications.
+The project is organized into separate frontend and backend modules.
 
-AMC-Bank-application/
-|
-|-- backend/
-|   |-- src/
-|   |   |-- main/
-|   |   |   |-- java/
-|   |   |   |   |-- ... (Java source packages)
-|   |   |   |
-|   |   |   |-- resources/
-|   |   |       |-- application.properties
-|   |   |
-|   |   |-- test/
-|   |
-|   |-- pom.xml
-|
-|-- frontend/
-|   |-- src/
-|   |   |-- ... (React components and application code)
-|   |
-|   |-- package.json
-|   |-- vite.config.*
-|
-|-- README.md
+### Backend (`amc-backend/`)
 
-### Backend Layers
+- `src/main/java/` – Java source code, including application classes and backend packages.
+- `src/main/resources/` – Application configuration and resources.
+  - `application.properties` – Database connection and application settings.
+- `src/test/` – Test source files.
+- `pom.xml` – Maven dependencies and build configuration.
 
-- **Controller:** Handles incoming HTTP requests and returns responses.
-- **Service:** Implements business logic and banking validation rules.
-- **Repository:** Performs database operations using Spring Data JPA.
-- **Database:** PostgreSQL stores persistent application data.
+**Backend architecture:**
 
-### Frontend
+- **Controller Layer:** Handles incoming HTTP requests and returns responses.
+- **Service Layer:** Implements business logic and banking validation rules.
+- **Repository Layer:** Manages database access using Spring Data JPA.
+- **Database Layer:** PostgreSQL stores persistent application data.
 
-- **React:** Builds the user interface for administrators and customers.
-- **Vite:** Provides frontend development and build tooling.
+### Frontend (`amc-frontend/`)
 
-*Note: The directory names shown above are representative. Keep them aligned with the actual folders in your repository.*
+- `src/` – React components and application source code.
+- `package.json` – Frontend dependencies and npm scripts.
+- `vite.config.*` – Vite development and build configuration.
 
+### Root Files
+
+- `README.md` – Project documentation and setup instructions.
+- `.gitignore` – Specifies files Git should ignore.
+- `LICENSE` – Project license.
 
 # Security Considerations
 
