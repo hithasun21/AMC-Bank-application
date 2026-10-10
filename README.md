@@ -14,47 +14,49 @@ AMC Bank follows a layered backend architecture and a client-server model.
 
 The React frontend communicates with the Spring Boot backend through REST APIs. Spring Security handles authentication and authorization using JWT tokens, while Spring Data JPA and Hibernate provide persistence between the Java application and PostgreSQL database.
 
-### High-Level Architecture
+## High-Level Architecture
 
-┌──────────────────────┐
-│      User            │
-│  Admin / Customer    │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│    React + Vite      │
-│      Frontend        │
-└──────────┬───────────┘
-           │ REST APIs
-           ▼
-┌──────────────────────┐
-│   Spring Security    │
-│   JWT Authentication │
-│   Role Authorization  │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│   Controller Layer   │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│     Service Layer    │
-│   Business Logic     │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│   Repository Layer   │
-│   Spring Data JPA    │
-└──────────┬───────────┘
-           ▼
-┌──────────────────────┐
-│      PostgreSQL      │
-│       Database       │
-└──────────────────────┘
+AMC Bank follows a layered architecture that separates the frontend, backend business logic, security, and database operations.
 
----
+                  USERS
+              (Admin / Customer)
+                      |
+                      v
+              React + Vite
+               (Frontend)
+                      |
+                      v
+                 REST APIs
+                      |
+                      v
+             Spring Security
+          (JWT Authentication
+           & Role Authorization)
+                      |
+                      v
+              Controller Layer
+           (Handles HTTP Requests)
+                      |
+                      v
+                Service Layer
+              (Business Logic)
+                      |
+                      v
+              Repository Layer
+             (Spring Data JPA)
+                      |
+                      v
+              Hibernate / JPA
+                      |
+                      v
+                PostgreSQL
+                 (Database)
 
+### Request Flow
+
+**React Frontend → REST API → Spring Security → Controller → Service → Repository → PostgreSQL**
+
+The response returns through the backend to the React frontend.
 # Key Features
 
 ## Authentication & Security
